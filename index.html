@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Garbus Beach</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+    /* #2b2d42, #8d99ae, #edf2f4, #ef233c, #d80032 */
+
+    html {
+      background-color: #EDF2F4;
+      color: #2B2D42;
+      font-family: 'Playfair Display', serif;;
+      font-weight: bold;
+    }
+
+    div {
+      width: 100%;
+      max-width: 600px;
+      margin: 150px auto;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 32px;
+    }
+
+    .y {
+      color: #D80032;
+      font-size: 48px;
+      /* font-weight: 700; */
+    }
+
+    .f {
+      font-size: 24px;
+      font-style: italic;
+      margin-top: 150px;
+    }
+    .cpy {
+      font-size: 16px;
+    }
+  </style>
+  <div>
+    <h1>Garbus Beach</h1>
+    <p>Nothing to do here<br/><span class="y">yet</span>.</p>
+    <p class="f">Garbus Beach <span class="cpy">©</span> <span id="date"></span>.</p>
+  </div>
+
+  <script type="text/javascript">
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("date").innerHTML = n;
+  </script>
+</body>
+</html>
